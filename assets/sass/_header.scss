@@ -1,0 +1,96 @@
+.header {
+  &__wrap {
+    position: relative;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phone{
+      border-bottom: 1px solid #e2e8f0;
+    }
+  }
+  &__logo {
+    display: block;
+    max-width: 16rem;
+    @include phone{
+      padding-left: 1rem;
+    }
+    .custom-logo-link {
+      margin: 0;
+      display: block;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &__navigation {
+    .main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #466323;
+    }
+    .main-navigation ul.menu ul.sub-menu, .main-navigation ul.nav-menu ul.children {
+      @media(min-width: 770px) {
+        background-color: #acbb9a;
+        li {
+          &:hover {
+            background: #466323;
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    //mobile
+   .handheld-navigation {
+      transition: all 0.5s ease;
+      position: absolute;
+      left: 0;
+      top: 80px;
+      background: white;
+      z-index: 3;
+      width: 100%;
+      ul li {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 1.5rem 1rem;
+        a {
+          padding: 0;
+          color: #466323;
+        }
+      }
+    }
+    .handheld-navigation ul.sub-menu {
+      transition: all 0.5s ease;
+      li {
+        border-bottom: none;
+      }
+    }
+    .main-navigation {
+      @include phone{
+        padding-right: 1rem;
+      }
+    }
+    button.menu-toggle {
+      outline: none;
+      border-color: #466323;
+      color: #466323;
+    }
+    button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:before {
+      background-color: #466323;
+    }
+    //mobile-end
+  }
+  &__cart {
+    @include phone{
+      display: none;
+    }
+  }
+}
