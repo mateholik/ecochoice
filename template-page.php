@@ -14,11 +14,6 @@
 
 get_header(); ?>
 
-
-<div class="page-bg" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/page-bg.jpg');">
-    <h1><?php echo the_title(); ?></h1>
-</div>
-
 <div class="container">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
       the_content();

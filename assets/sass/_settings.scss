@@ -13,6 +13,12 @@ a, button {
     outline: none;
   }
 }
+select {
+  background-color: #78A643;
+  border: 0.1rem solid #638D33;
+  outline: none;
+  color: #fff;
+}
 @mixin phone {
   @media (max-width: 767px) { @content; }
 }
@@ -37,6 +43,19 @@ a, button {
     @include phone{
       position: relative;
       padding: 0;
+    }
+  }
+  &--cannabis {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 63rem;
+      height: 20rem;
+      background: url('images/cannabis.svg');
+      top: -9rem;
+      right: 10rem;
+      z-index: -1;
     }
   }
 }

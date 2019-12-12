@@ -228,7 +228,8 @@ get_header(); ?>
                                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-right.svg" alt="arrow">
                                         </div>
                                         <p class="products__text"> Ypatingai turtingos skalsiomis savybėmis ir organizmui reikalingais elementais: Omega-3, Omega-6 riebalų rugštimis</p>
-                                        <?php echo do_shortcode('[products limit="3" columns="3" category="dovanu-rinkiniai"]') ?>
+<!--                                        --><?php //echo do_shortcode('[products limit="3" columns="3" category="dovanu-rinkiniai"]') ?>
+                                        <?php echo do_shortcode('[products limit="3" columns="3" category="accessories"]') ?>
                                     </div>
                                 </div>
                             </div>

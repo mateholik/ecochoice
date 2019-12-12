@@ -39,3 +39,4 @@ add_action( 'init', 'footer_menu' );
 
 include_once ('inc/header.php');
 include_once ('inc/homepage.php');
+include_once ('inc/woo.php');

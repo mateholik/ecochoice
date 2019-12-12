@@ -241,6 +241,18 @@ function customHeader() {
            </div>
        </div>
    </div>
+    <?php if( !is_front_page()) {?>
+    <div class="page-bg" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/page-bg.jpg');">
+        <?php if(is_woocommerce()) {?>
+            <h1><?php woocommerce_page_title(); ?></h1>
+        <?php } else { ?>
+            <h1><?php echo the_title(); ?></h1>
+        <?php } ?>
+    </div>
+    <?php } ?>
+    <div class="container container--cannabis">
+
+
     <?php
 }
 add_action( 'storefront_header', 'customHeader', 1 );
