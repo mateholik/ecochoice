@@ -13,11 +13,28 @@ a, button {
     outline: none;
   }
 }
-select {
+select, {
   background-color: #78A643;
   border: 0.1rem solid #638D33;
   outline: none;
   color: #fff;
+}
+textarea {
+  background-color: #638d3317;
+  border: 0.1rem solid #638D33;
+  outline: none;
+  border-radius: 0.3rem;
+  &:focus {
+    background-color: #638d3317;
+    outline-color: #638D33;
+  }
+}
+a {
+  color: #466323;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #466323;
 }
 @mixin phone {
   @media (max-width: 767px) { @content; }
@@ -59,7 +76,31 @@ select {
     }
   }
 }
-
+input[type='submit'] {
+  outline: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  max-width: 35rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  background-color: #48691A;
+  border-bottom: 0.3rem solid #30470E;
+  transition: all .1s ease-in-out;
+  @include phone {
+    height: 5rem;
+  }
+  &:hover {
+    background: #304A0D;
+    border-bottom: 0.3rem solid #222f0f;
+  }
+  &:active {
+    border: 0 solid;
+  }
+}
 .btn {
   outline: none;
   border-radius: 0.3rem;
@@ -119,5 +160,26 @@ select {
     &:active {
       border: 0 solid;
     }
+  }
+}
+
+
+.row {
+  display: flex;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.col {
+  width: 50%;
+ &:first-of-type {
+   margin-right: 3rem;
+   @media (max-width: 768px) {
+     margin-right: 0;
+     margin-bottom: 2rem;
+   }
+ }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }

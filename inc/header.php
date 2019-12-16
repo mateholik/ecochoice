@@ -245,12 +245,14 @@ function customHeader() {
     <div class="page-bg" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/page-bg.jpg');">
         <?php if(is_woocommerce()) {?>
             <h1><?php woocommerce_page_title(); ?></h1>
-        <?php } else { ?>
+        <?php } else if (is_category()) { ?>
+             <h1><?php single_cat_title(); ?></h1> <?php
+        } else { ?>
             <h1><?php echo the_title(); ?></h1>
         <?php } ?>
     </div>
     <?php } ?>
-    <div class="container container--cannabis">
+    <div class="container <?php if( !is_front_page()) echo 'container--cannabis'?>">
 
 
     <?php

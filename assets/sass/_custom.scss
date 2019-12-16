@@ -470,3 +470,20 @@
     }
   }
 }
+
+//blog
+.entry-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  color: #466323;
+}
+.page-header {
+  .page-title {
+    display: none;
+  }
+}
+.post-comments a {
+  color: #466323!important;
+}
