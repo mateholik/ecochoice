@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-    <div class="container contact">
+    <div class="contact">
         <div class="row">
             <div class="col form">
                 <h2>Parašyk mums!</h2>

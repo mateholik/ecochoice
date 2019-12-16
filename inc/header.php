@@ -258,3 +258,14 @@ function customHeader() {
     <?php
 }
 add_action( 'storefront_header', 'customHeader', 1 );
+
+
+
+//add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs', 20 );
+//function jk_woocommerce_breadcrumbs() {
+//    return array(
+//        'wrap_before' => '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb">',
+//        'wrap_after'  => '</nav></div></div>',
+//    );
+//}	$defaults['wrap_before'] = '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb">';
+//$defaults['wrap_after']  = '</nav></div></div>';
