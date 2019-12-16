@@ -32,8 +32,8 @@ get_header(); ?>
                                 <h1 class="item__title">PLUOštinių KANAPIŲ PRODUKcija</h1>
                                 <p class="item__text">Maistinės pluoštinės kanapės, iš kurių gaminama mūsų produkcija, ypatingai turtingos skalsiomis savybėmis ir organizmui reikalingais elementais: Omega-3, Omega-6 riebalų rugštimis</p>
                                 <div class="item__btns">
-                                    <a href="#" class="btn btn--transparent">Daugiau Informacijos</a>
-                                    <a href="#" class="btn btn--light">Kanapių Produktai</a>
+                                    <a href="https://ecochoice.lt/apie-mus/" class="btn btn--transparent">Daugiau Informacijos</a>
+                                    <a href="https://ecochoice.lt/parduotuve/" class="btn btn--light">Kanapių Produktai</a>
                                 </div>
                                 <div class="item__line">
                                     <?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/img/svg/green-line.svg' ); ?>
@@ -123,7 +123,7 @@ get_header(); ?>
                                     APSAUGOTI NUO Vėžio <br>
                                 </p>
                             </div>
-                            <a href="" class="btn btn--light">Skaityti daugiau</a>
+                            <a href="https://ecochoice.lt/kanapiu-nauda" class="btn btn--light">Skaityti daugiau</a>
                         </div>
                         <div class="item">
                             <h1 class="item__title">Natūrali produkcija</h1>
@@ -132,7 +132,7 @@ get_header(); ?>
                                 <p class="item__text">Ekologiška lietuviška produkcija
                                 </p>
                             </div>
-                            <a href="" class="btn btn--light">Produktai</a>
+                            <a href="https://ecochoice.lt/parduotuve" class="btn btn--light">Produktai</a>
                         </div>
                         <div class="item">
                             <h1 class="item__title">Idėja dovanai</h1>
@@ -142,7 +142,7 @@ get_header(); ?>
                                     įvairūs pluoštinių kanapių rinkiniai
                                 </p>
                             </div>
-                            <a href="" class="btn btn--light">Skaityti daugiau</a>
+                            <a href="https://ecochoice.lt/produkto-kategorija/dovanu-rinkiniai" class="btn btn--light">Dovanų rinkiniai</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@ get_header(); ?>
                                         <div class="bg__mask"></div>
                                         <div class="bg__title bg__title--soft">Įsigyk </div>
                                         <div class="bg__title">Kanapių Rinkinius</div>
-                                        <a href="" class="btn btn--transparent">Daugiau Rinkinių</a>
+                                        <a href="https://ecochoice.lt/produkto-kategorija/dovanu-rinkiniai" class="btn btn--transparent">Daugiau Rinkinių</a>
                                     </div>
                                 </div>
                                 <div class="sets__col">

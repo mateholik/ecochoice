@@ -10,13 +10,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     @include phone{
       display: block;
       text-align: center;
     }
   }
   .col {
+    width: auto;
+    &:first-of-type {
+      margin-right: 0;
+    }
     &--copy {
       @include phone{
         background: #c9ccc3;

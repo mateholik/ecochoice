@@ -40,3 +40,20 @@ add_action( 'init', 'footer_menu' );
 include_once ('inc/header.php');
 include_once ('inc/homepage.php');
 include_once ('inc/woo.php');
+
+
+//function add_custom_sizes() {
+//    add_image_size( 'map-size', 199, 199, array('center','center') );
+//    add_image_size('shop-size', 599, 599, array('center','center') );
+//    add_image_size('discover-size', 749, 620, array('center','center'));
+//    add_image_size( 'map-size1', 198, 199, true );
+//    add_image_size('shop-size1', 598, 599, true );
+//    add_image_size('discover-size1', 748, 620, true);
+//
+//    add_image_size( 'home-slide', 300, 200 );
+//}
+//
+//add_action('after_setup_theme','add_custom_sizes');
+//
+//add_theme_support( 'post-thumbnails' );
+//add_image_size( 'home-slide', 300, 200 );

@@ -9,7 +9,8 @@ get_header(); ?>
 
     <div class="container contact">
         <div class="row">
-            <div class="col">
+            <div class="col form">
+                <h2>Parašyk mums!</h2>
                 <?php echo do_shortcode('[contact-form-7 id="118" title="Kontaktų forma 1"]') ?>
             </div>
             <div class="col info">
