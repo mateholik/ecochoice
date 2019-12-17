@@ -163,7 +163,7 @@ get_header(); ?>
                             $args = array('taxonomy' => 'product_cat');
                             $categories = get_categories( $args );
                             foreach ($categories as $cat) {
-                                $size = 'medium'; //can also be value: 'thumbnail'
+                                $size = 'home-slide'; //can also be value: 'thumbnail'
                                 $thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
                                 $image = wp_get_attachment_image( $thumbnail_id, $size );
                                 $link = get_category_link( $cat->term_id);
