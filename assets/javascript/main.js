@@ -1,7 +1,7 @@
-import $ from 'jquery';
+window.$ = window.jQuery = require('jquery');
 import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
-// window.$ = window.jQuery = $;
+let owl_carousel = require('owl.carousel');
+window.fn = owl_carousel;
 jQuery(function($){
     $("#slider1").owlCarousel({
         items: 1,

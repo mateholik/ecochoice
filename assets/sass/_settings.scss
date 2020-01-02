@@ -29,6 +29,11 @@ textarea {
     outline-color: #638D33;
   }
 }
+input {
+ &:focus {
+   outline: none;
+ }
+}
 a {
   color: #466323;
 }
@@ -67,40 +72,40 @@ h1, h2, h3, h4, h5, h6 {
     &:after {
       position: absolute;
       content: "";
-      width: 63rem;
-      height: 20rem;
+      width: 21rem;
+      height: 21rem;
       background: url('images/cannabis.svg');
-      top: -9rem;
+      top: -5rem;
       right: 10rem;
       z-index: -1;
     }
   }
 }
-input[type='submit'] {
-  outline: none;
-  border-radius: 0.3rem;
-  width: 100%;
-  max-width: 35rem;
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  color: white;
-  background-color: #48691A;
-  border-bottom: 0.3rem solid #30470E;
-  transition: all .1s ease-in-out;
-  @include phone {
-    height: 5rem;
-  }
-  &:hover {
-    background: #304A0D;
-    border-bottom: 0.3rem solid #222f0f;
-  }
-  &:active {
-    border: 0 solid;
-  }
-}
+//input[type='submit'] {
+//  outline: none;
+//  border-radius: 0.3rem;
+//  width: 100%;
+//  max-width: 35rem;
+//  height: 6rem;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  font-weight: 600;
+//  color: white;
+//  background-color: #48691A;
+//  border-bottom: 0.3rem solid #30470E;
+//  transition: all .1s ease-in-out;
+//  @include phone {
+//    height: 5rem;
+//  }
+//  &:hover {
+//    background: #304A0D;
+//    border-bottom: 0.3rem solid #222f0f;
+//  }
+//  &:active {
+//    border: 0 solid;
+//  }
+//}
 .btn {
   outline: none;
   border-radius: 0.3rem;
@@ -159,6 +164,26 @@ input[type='submit'] {
     }
     &:active {
       border: 0 solid;
+    }
+  }
+  &--simple {
+    border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #222;
+    max-width: 21rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-bottom: 0.2rem solid #555;
+    &:hover {
+      background: #aebb9d2b;
+      border-bottom: 0.2rem solid #000;
+    }
+    &:active {
+      border: 1px solid #222;
     }
   }
 }

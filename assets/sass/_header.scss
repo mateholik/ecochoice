@@ -34,14 +34,22 @@
     }
     .main-navigation ul.menu ul.sub-menu, .main-navigation ul.nav-menu ul.children {
       @media(min-width: 770px) {
-        background-color: #acbb9a;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 1px 8px #9e9999;
         li {
+          &:not(:last-child) {
+            border-bottom: 1px solid #e2e8f0;
+          }
           &:hover {
             background: #466323;
             a {
               color: #fff;
             }
           }
+        }
+        a {
+          font-weight: 600;
         }
       }
     }
