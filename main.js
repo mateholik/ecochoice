@@ -110,7 +110,8 @@ jQuery(function ($) {
     autoplayHoverPause: true,
     autoplaySpeed: 1000,
     autoplayTimeout: 4000,
-    loop: true
+    loop: true,
+    nav: true
   });
   $("#slider2").owlCarousel({
     items: 4,
@@ -118,7 +119,7 @@ jQuery(function ($) {
     autoplayHoverPause: true,
     autoplaySpeed: 1000,
     margin: 10,
-    autoplayTimeout: 1500,
+    autoplayTimeout: 3000,
     nav: true,
     loop: true
   });
@@ -14897,8 +14898,8 @@ module.exports = function (css) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/vladimir/Desktop/vordpresas/local/public/wp-content/themes/storefront-child-theme-master/assets/javascript/main.js */"./assets/javascript/main.js");
-module.exports = __webpack_require__(/*! /Users/vladimir/Desktop/vordpresas/local/public/wp-content/themes/storefront-child-theme-master/assets/sass/style.scss */"./assets/sass/style.scss");
+__webpack_require__(/*! /Users/vladimir/Documents/sites/wp/wp-content/themes/storefront-child-theme-master/assets/javascript/main.js */"./assets/javascript/main.js");
+module.exports = __webpack_require__(/*! /Users/vladimir/Documents/sites/wp/wp-content/themes/storefront-child-theme-master/assets/sass/style.scss */"./assets/sass/style.scss");
 
 
 /***/ })

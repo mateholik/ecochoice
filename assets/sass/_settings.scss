@@ -13,26 +13,14 @@ a, button {
     outline: none;
   }
 }
-select, {
-  background-color: #78A643;
-  border: 0.1rem solid #638D33;
+select, textarea, input {
+  //background-color: #78A643;
+  //border: 0.1rem solid #638D33;
   outline: none;
-  color: #fff;
-}
-textarea {
-  background-color: #638d3317;
-  border: 0.1rem solid #638D33;
-  outline: none;
-  border-radius: 0.3rem;
+  //color: #fff;
   &:focus {
-    background-color: #638d3317;
-    outline-color: #638D33;
+    outline: none;
   }
-}
-input {
- &:focus {
-   outline: none;
- }
 }
 a {
   color: #466323;
@@ -74,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
       content: "";
       width: 21rem;
       height: 21rem;
-      background: url('images/cannabis.svg');
+      //background: url('images/cannabis.svg');
       top: -5rem;
       right: 10rem;
       z-index: -1;
@@ -179,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #222;
     border-bottom: 0.2rem solid #555;
     &:hover {
-      background: #aebb9d2b;
+      background: #efefed;
       border-bottom: 0.2rem solid #000;
     }
     &:active {
@@ -218,4 +206,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     max-width: 128rem;
   }
+}
+
+//fix
+.woocommerce-checkout-review-order {
+  select {
+    width: 100%;
+    border: 1px solid #404e2e;
+  }
+}
+.entry-header {
+  display : none;
+}
+.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+  background-color: #78a643;
 }

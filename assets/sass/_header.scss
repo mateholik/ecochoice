@@ -102,3 +102,17 @@
     }
   }
 }
+
+
+
+  .header__navigation .main-navigation ul.menu>li>a, .header__navigation .main-navigation ul.nav-menu>li>a {
+    @media (max-width:900px) and (min-width:400px) {
+      font-size: 1.4rem;
+    }
+
+  }
+  .main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a {
+    @media (max-width:900px) and (min-width:400px) {
+      padding: 0.4rem;
+    }
+  }

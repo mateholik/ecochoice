@@ -9,7 +9,8 @@ jQuery(function($){
         autoplayHoverPause: true,
         autoplaySpeed: 1000,
         autoplayTimeout: 4000,
-        loop: true
+        loop: true,
+        nav: true
     });
     $("#slider2").owlCarousel({
         items: 4,
@@ -17,7 +18,7 @@ jQuery(function($){
         autoplayHoverPause: true,
         autoplaySpeed: 1000,
         margin:10,
-        autoplayTimeout: 1500,
+        autoplayTimeout: 3000,
         nav: true,
         loop: true
     });

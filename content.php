@@ -35,7 +35,7 @@
                 <span>Kategorija: <?php the_category(); ?></span>
             </div>
             <div class="postas__btn">
-                <a href=" <?php the_permalink(); ?>" class="btn btn--light">Plačiau</a>
+                <a href=" <?php the_permalink(); ?>" class="btn btn--simple">Plačiau</a>
             </div>
         </div>
     </div>

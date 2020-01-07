@@ -2,6 +2,20 @@
   padding: 0;
 }
 .custom-slider-1 {
+  .owl-prev, .owl-next {
+    font-size: 7rem!important;
+    position: absolute;
+  }
+  .owl-prev {
+    left: 1.5rem;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .owl-next {
+    right: 1.5rem;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
   .owl-dots {
     display: flex;
     justify-content: center;
